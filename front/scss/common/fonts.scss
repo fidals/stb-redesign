@@ -1,0 +1,10 @@
+// ================================================================
+// We use only woff & woff2 formats.
+// ================================================================
+@font-face {
+  font-family: "Custom Font";
+  src: url("#{$font-path}/cool-webfont.woff2") format("woff2"),
+       url("#{$font-path}/cool-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
