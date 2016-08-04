@@ -35,7 +35,6 @@ const PATH = {
     js: {
       vendors: [
         'front/js/vendors/jquery-2.2.4.min.js',
-        'front/js/vendors/bootstrap.min.js',
         'front/js/vendors/cookie.js',
       ],
 
@@ -78,8 +77,7 @@ gulp.task('build', callback => {
     'styles',
     'js-vendors',
     'js-common',
-    // 'js-pages',
-    // 'js-admin',
+    'js-pages',
     'images',
     'fonts',
     callback
@@ -165,27 +163,6 @@ gulp.task('js-pages', () => {
 });
 
 // ================================================================
-// JS : Build admin page scripts
-// ================================================================
-gulp.task('js-admin', () => {
-  gulp.src(PATH.src.js.admin)
-    .pipe(changed(PATH.build.js, {extension: '.js'}))
-    .pipe(gulpIf(ENV.development, sourcemaps.init()))
-    .pipe(plumber())
-    .pipe(babel({
-      presets: ['es2015'],
-    }))
-    .pipe(concat('admin.js'))
-    .pipe(rename({
-      suffix: '.min',
-    }))
-    .pipe(gulpIf(ENV.production, uglify()))
-    .pipe(gulpIf(ENV.development, sourcemaps.write('.')))
-    .pipe(gulp.dest(PATH.build.js))
-    .pipe(livereload());
-});
-
-// ================================================================
 // Images : Copy images
 // ================================================================
 gulp.task('images', () => {
@@ -209,7 +186,7 @@ gulp.task('fonts', () => {
 gulp.task('watch', () => {
   livereload.listen();
   gulp.watch(PATH.watch.styles, ['styles']);
-  gulp.watch(PATH.watch.js, ['js-common']);
+  gulp.watch(PATH.watch.js, ['js-common', 'js-pages']);
   gulp.watch(PATH.watch.images, ['images']);
   gulp.watch(PATH.watch.html, livereload.changed);
 });
