@@ -5,13 +5,44 @@
 $img-path: "../images";
 $font-path: "../fonts";
 
-// Theme colors:
-$c-black: #000;
-$c-btn-red: #ff7f83;
-$c-btn-red-hover: #ef4b50;
-$c-grey-text: #333;
-$c-white: #fff;
-
 // Fonts:
 $f-size-base: 16px;
-$f-family: Calibri, Arial, sans-serif;
+$f-family: "Open Sans", sans-serif;
+
+// Theme colors:
+$c-black: #000;
+$c-white: #fff;
+
+$c-btn: #fc7126;
+$c-btn-hover: #bd6739;
+$c-btn-active: #904f2b;
+$c-link: #47a1d2;
+$c-link-hover: #07d;
+
+$c-navbar-bg: #f3f3f3;
+$c-nav-link: #404040;
+$c-nav-link-hover: #979797;
+$c-nav-link-chart: #fc7126;
+$c-nav-link-chart-hover: #bd6739;
+$c-contactbar-bg: #fc7126;
+$c-contactbar-btn-search: #6d6c6c;
+$c-contactbar-btn-search-hover: #434343;
+$c-contactbar-search-field: #434343;
+
+$c-footer-bg: #f3f3f3;
+$c-footer-headers: #1d1d1d;
+$c-footer-li: #434343;
+$c-copyr: #5f5f5f;
+
+$c-404-h1: #2c2c2c;
+$c-404-info: #626262;
+
+// Params
+$h-nav: 56px;
+$h-contactbar: 44px;
+$h-header: $h-nav + $h-contactbar;
+
+// Shadows:
+$c-shadow: rgba(0, 0, 0, 0.25);
+$sh-search: 0 2px 4px 0 $c-shadow;
+$sh-search-focus: 0 2px 8px 2px $c-shadow;
