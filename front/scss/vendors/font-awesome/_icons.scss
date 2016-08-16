@@ -51,15 +51,15 @@
 //  content: $fa-var-th-list;
 //}
 //
-//.#{$fa-css-prefix}-check:before {
-//  content: $fa-var-check;
-//}
+.#{$fa-css-prefix}-check:before {
+  content: $fa-var-check;
+}
 //
 //.#{$fa-css-prefix}-remove:before,
-//.#{$fa-css-prefix}-close:before,
-//.#{$fa-css-prefix}-times:before {
-//  content: $fa-var-times;
-//}
+.#{$fa-css-prefix}-close:before,
+.#{$fa-css-prefix}-times:before {
+  content: $fa-var-times;
+}
 //
 //.#{$fa-css-prefix}-search-plus:before {
 //  content: $fa-var-search-plus;
@@ -374,18 +374,18 @@
 //.#{$fa-css-prefix}-arrow-left:before {
 //  content: $fa-var-arrow-left;
 //}
-//
-//.#{$fa-css-prefix}-arrow-right:before {
-//  content: $fa-var-arrow-right;
-//}
+
+.#{$fa-css-prefix}-arrow-right:before {
+  content: $fa-var-arrow-right;
+}
 //
 //.#{$fa-css-prefix}-arrow-up:before {
 //  content: $fa-var-arrow-up;
 //}
 //
-//.#{$fa-css-prefix}-arrow-down:before {
-//  content: $fa-var-arrow-down;
-//}
+.#{$fa-css-prefix}-arrow-down:before {
+  content: $fa-var-arrow-down;
+}
 //
 //.#{$fa-css-prefix}-mail-forward:before,
 //.#{$fa-css-prefix}-share:before {
@@ -964,9 +964,9 @@
 //  content: $fa-var-angle-left;
 //}
 //
-//.#{$fa-css-prefix}-angle-right:before {
-//  content: $fa-var-angle-right;
-//}
+.#{$fa-css-prefix}-angle-right:before {
+  content: $fa-var-angle-right;
+}
 //
 //.#{$fa-css-prefix}-angle-up:before {
 //  content: $fa-var-angle-up;

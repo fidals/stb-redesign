@@ -16,6 +16,8 @@ import rename from 'gulp-rename';
 import minifyCSS from 'gulp-cssnano';
 import plumber from 'gulp-plumber';
 import sequence from 'run-sequence';
+import spritesmith from 'gulp.spritesmith';
+
 
 // ================================================================
 // CONSTS
@@ -27,6 +29,10 @@ const ENV = {
 
 const PATH = {
   src: {
+    sprites: {
+      main: 'front/images/spriteSrc/main/*.png',
+    },
+
     styles: [
       'front/scss/styles.scss',
       'front/scss/pages.scss',
@@ -46,11 +52,22 @@ const PATH = {
       ],
     },
 
-    images: 'front/images/**/*',
+    images: [
+      'front/images/**/*',
+      '!front/images/spriteSrc{,/**}',
+    ],
     fonts: 'front/fonts/**/*',
   },
 
   build: {
+    sprites: {
+      pathInCss: '../images/',
+      img: 'front/build/images/',
+      scss: {
+        main: 'front/scss/common/',
+        pages: 'front/scss/pages/',
+      },
+    },
     styles: 'front/build/css/',
     js: 'front/build/js/',
     images: 'front/build/images/',
@@ -65,6 +82,25 @@ const PATH = {
     html: 'templates/**/*',
   },
 };
+
+// ================================================================
+// SPRITES
+// ================================================================
+gulp.task('sprites', callback => {
+  let spriteData = gulp.src(PATH.src.sprites.main)
+    .pipe(spritesmith({
+      imgName: 'sprite-main.png',
+      cssName: 'sprite-main.css',
+      imgPath: PATH.build.sprites.pathInCss + 'sprite-main.png'
+    }))
+  let imgStream = spriteData.img
+    .pipe(gulp.dest(PATH.build.sprites.img));
+  let cssStream = spriteData.css
+    .pipe(rename({
+      extname: '.scss',
+    }))
+    .pipe(gulp.dest(PATH.build.sprites.scss.main));
+});
 
 // ================================================================
 // BUILD

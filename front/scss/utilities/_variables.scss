@@ -13,9 +13,11 @@ $f-family: "Open Sans", sans-serif;
 $c-black: #000;
 $c-white: #fff;
 
-$c-btn: #fc7126;
-$c-btn-hover: #bd6739;
-$c-btn-active: #904f2b;
+$c-btn-orange: #fc7126;
+$c-btn-orange-hover: #bd6739;
+$c-btn-orange-active: #904f2b;
+$c-btn-white-active: #9b9b9b;
+$c-btn-white-bg-hover: #c3c3c3;
 $c-link: #47a1d2;
 $c-link-hover: #07d;
 
@@ -29,6 +31,28 @@ $c-contactbar-btn-search: #6d6c6c;
 $c-contactbar-btn-search-hover: #434343;
 $c-contactbar-search-field: #434343;
 
+$c-application-bg: #33393d;
+
+$c-offer-title: #1c2e36;
+$c-offer-title-hover: #979797;
+
+$c-about-bg: #fbfbfb;
+$c-about-h2: #171237;
+$c-about-text: #212121;
+
+$c-partners-title: #212121;
+
+$c-news-item-bg: #f8f8f8;
+$c-news-item-bg-hover: #fbfbfb;
+$c-news-title: #263238;
+$c-news-short: #212121;
+
+$c-reviews: #1c2e36;
+$c-reviews-title: #2e2e2e;
+$c-reviews-nav-item: #bdc3c7;
+$c-reviews-nav-item-active: #242424;
+$c-reviews-bot-line: #e6eaeb;
+
 $c-footer-bg: #f3f3f3;
 $c-footer-headers: #1d1d1d;
 $c-footer-li: #434343;
@@ -36,6 +60,15 @@ $c-copyr: #5f5f5f;
 
 $c-404-h1: #2c2c2c;
 $c-404-info: #626262;
+
+$c-modal-close: #9b9b9b;
+$c-modal-h3: #263238;
+$c-modal-label: #acacac;
+$c-modal-label-asterisk: #fc7126;
+$c-modal-input: #404040;
+$c-modal-input-border: #d5d5d5;
+$c-modal-status-check: #51ceb2;
+$c-modal-status-fail: #ed0b00;
 
 // Params
 $h-nav: 56px;
@@ -46,3 +79,5 @@ $h-header: $h-nav + $h-contactbar;
 $c-shadow: rgba(0, 0, 0, 0.25);
 $sh-search: 0 2px 4px 0 $c-shadow;
 $sh-search-focus: 0 2px 8px 2px $c-shadow;
+$sh-news-item: 0 2px 4px 0 $c-shadow;
+$sh-modal: 0 2px 8px 0 $c-shadow;
