@@ -14,7 +14,7 @@
 .#{$fa-css-prefix}-search:before {
   content: $fa-var-search;
 }
-//
+
 //.#{$fa-css-prefix}-envelope-o:before {
 //  content: $fa-var-envelope-o;
 //}
@@ -54,21 +54,21 @@
 .#{$fa-css-prefix}-check:before {
   content: $fa-var-check;
 }
-//
+
 //.#{$fa-css-prefix}-remove:before,
 .#{$fa-css-prefix}-close:before,
 .#{$fa-css-prefix}-times:before {
   content: $fa-var-times;
 }
-//
-//.#{$fa-css-prefix}-search-plus:before {
-//  content: $fa-var-search-plus;
-//}
-//
-//.#{$fa-css-prefix}-search-minus:before {
-//  content: $fa-var-search-minus;
-//}
-//
+
+// .#{$fa-css-prefix}-search-plus:before {
+//   content: $fa-var-search-plus;
+// }
+
+// .#{$fa-css-prefix}-search-minus:before {
+//   content: $fa-var-search-minus;
+// }
+
 //.#{$fa-css-prefix}-power-off:before {
 //  content: $fa-var-power-off;
 //}
@@ -400,14 +400,14 @@
 //  content: $fa-var-compress;
 //}
 //
-//.#{$fa-css-prefix}-plus:before {
-//  content: $fa-var-plus;
-//}
-//
-//.#{$fa-css-prefix}-minus:before {
-//  content: $fa-var-minus;
-//}
-//
+.#{$fa-css-prefix}-plus:before {
+  content: $fa-var-plus;
+}
+
+.#{$fa-css-prefix}-minus:before {
+  content: $fa-var-minus;
+}
+
 //.#{$fa-css-prefix}-asterisk:before {
 //  content: $fa-var-asterisk;
 //}

@@ -103,6 +103,8 @@ a {
 
   &-nav {
     float: right;
+    position: relative;
+    right: -14px;
   }
 
   &-nav-item {
@@ -206,6 +208,29 @@ a {
 
     &-link:hover {
       color: $c-application-bg;
+    }
+  }
+}
+
+// ================================================================
+// BREADCRUMBS
+// ================================================================
+.breadcrumbs {
+  padding: 59px 0;
+  color: $c-path;
+  font-size: $f-size-base - 3;
+
+  &-link {
+    font-weight: 600;
+    line-height: 1.23;
+    color: $c-path;
+
+    &:hover {
+      color: $c-path-hover;
+    }
+
+    &:active {
+      color: $c-path-active;
     }
   }
 }

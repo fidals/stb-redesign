@@ -11,15 +11,6 @@ const mainPage = (() => {
     setUpListeners();
   };
 
-  const reviewsSlideTo = (reviewID) => {
-    DOM.$reviewsContentItems
-      .fadeOut()
-      .eq(reviewID).fadeIn();
-    DOM.$reviewsNavItems
-      .removeClass('reviews-nav-item-active')
-      .eq(reviewID).addClass('reviews-nav-item-active');
-  };
-
   const setUpListeners = () => {
     DOM.$btnContuctus
       .click(event => {
@@ -37,6 +28,15 @@ const mainPage = (() => {
         let reviewID = $(this).data('slide-to');
         reviewsSlideTo(reviewID);
       });
+  };
+
+  const reviewsSlideTo = (reviewID) => {
+    DOM.$reviewsContentItems
+      .fadeOut()
+      .eq(reviewID).fadeIn();
+    DOM.$reviewsNavItems
+      .removeClass('reviews-nav-item-active')
+      .eq(reviewID).addClass('reviews-nav-item-active');
   };
 
   init();

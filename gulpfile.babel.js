@@ -44,7 +44,9 @@ const PATH = {
         'front/js/vendors/cookie.js',
       ],
 
-      pages: [],
+      pages: [
+        'front/js/components/catalog.es6',
+      ],
 
       common: [
         'front/js/shared/*.es6',
