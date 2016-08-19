@@ -1,9 +1,9 @@
 const mainCatalog = (() => {
   const DOM = {
-    $catalogCategory: $('.js-catalog-category-title'),
-    $catalogCategoryUL: $('.js-catalog-category-ul'),
-    $catalogSubcategory: $('.js-catalog-subcategory'),
-    $catalogSubcategoryUL: $('.js-catalog-subcategory-ul'),
+    $category: $('.js-catalog-category-title'),
+    categoryUL: '.js-catalog-category-ul',
+    $subcategory: $('.js-catalog-subcategory'),
+    subcategoryUL: '.js-catalog-subcategory-ul',
   };
 
   const init = () => {
@@ -11,12 +11,12 @@ const mainCatalog = (() => {
   };
 
   const setUpListeners = () => {
-    DOM.$catalogCategory
+    DOM.$category
       .click(function () {
         toggleCategory($(this));
       });
 
-    DOM.$catalogSubcategory
+    DOM.$subcategory
       .click(function () {
         toggleSubcategory($(this));
       });
@@ -25,7 +25,7 @@ const mainCatalog = (() => {
   const toggleCategory = ($category) => {
     $category
       .toggleClass('catalog-category-title-active')
-      .next('.js-catalog-category-ul')
+      .next(DOM.categoryUL)
       .stop()
       .slideToggle();
   };
@@ -37,7 +37,7 @@ const mainCatalog = (() => {
       .toggleClass('fa-plus')
       .end()
       .toggleClass('catalog-subcategory-active')
-      .next('.js-catalog-subcategory-ul')
+      .next(DOM.subcategoryUL)
       .stop()
       .slideToggle();
   };

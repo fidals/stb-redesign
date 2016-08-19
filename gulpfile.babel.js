@@ -18,7 +18,6 @@ import plumber from 'gulp-plumber';
 import sequence from 'run-sequence';
 import spritesmith from 'gulp.spritesmith';
 
-
 // ================================================================
 // CONSTS
 // ================================================================
@@ -31,6 +30,7 @@ const PATH = {
   src: {
     sprites: {
       main: 'front/images/spriteSrc/main/*.png',
+      pages: 'front/images/spriteSrc/pages/*.png',
     },
 
     styles: [
@@ -46,6 +46,7 @@ const PATH = {
 
       pages: [
         'front/js/components/catalog.es6',
+        'front/js/components/category.es6',
       ],
 
       common: [
@@ -102,6 +103,20 @@ gulp.task('sprites', callback => {
       extname: '.scss',
     }))
     .pipe(gulp.dest(PATH.build.sprites.scss.main));
+
+  spriteData = gulp.src(PATH.src.sprites.pages)
+    .pipe(spritesmith({
+      imgName: 'sprite-pages.png',
+      cssName: 'sprite-pages.css',
+      imgPath: PATH.build.sprites.pathInCss + 'sprite-pages.png'
+    }))
+  imgStream = spriteData.img
+    .pipe(gulp.dest(PATH.build.sprites.img));
+  cssStream = spriteData.css
+    .pipe(rename({
+      extname: '.scss',
+    }))
+    .pipe(gulp.dest(PATH.build.sprites.scss.pages));
 });
 
 // ================================================================

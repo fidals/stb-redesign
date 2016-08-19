@@ -275,10 +275,10 @@
 //  content: $fa-var-share-square-o;
 //}
 //
-//.#{$fa-css-prefix}-check-square-o:before {
-//  content: $fa-var-check-square-o;
-//}
-//
+.#{$fa-css-prefix}-check-square-o:before {
+  content: $fa-var-check-square-o;
+}
+
 //.#{$fa-css-prefix}-arrows:before {
 //  content: $fa-var-arrows;
 //}
@@ -579,10 +579,10 @@
 //  content: $fa-var-phone;
 //}
 //
-//.#{$fa-css-prefix}-square-o:before {
-//  content: $fa-var-square-o;
-//}
-//
+.#{$fa-css-prefix}-square-o:before {
+  content: $fa-var-square-o;
+}
+
 //.#{$fa-css-prefix}-bookmark-o:before {
 //  content: $fa-var-bookmark-o;
 //}
@@ -784,14 +784,14 @@
 //  content: $fa-var-money;
 //}
 //
-//.#{$fa-css-prefix}-caret-down:before {
-//  content: $fa-var-caret-down;
-//}
-//
-//.#{$fa-css-prefix}-caret-up:before {
-//  content: $fa-var-caret-up;
-//}
-//
+.#{$fa-css-prefix}-caret-down:before {
+  content: $fa-var-caret-down;
+}
+
+.#{$fa-css-prefix}-caret-up:before {
+  content: $fa-var-caret-up;
+}
+
 //.#{$fa-css-prefix}-caret-left:before {
 //  content: $fa-var-caret-left;
 //}
@@ -1222,10 +1222,10 @@
 //  content: $fa-var-level-down;
 //}
 //
-//.#{$fa-css-prefix}-check-square:before {
+// .#{$fa-css-prefix}-check-square:before {
 //  content: $fa-var-check-square;
-//}
-//
+// }
+// 
 //.#{$fa-css-prefix}-pencil-square:before {
 //  content: $fa-var-pencil-square;
 //}

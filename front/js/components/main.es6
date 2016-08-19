@@ -1,5 +1,8 @@
 const mainPage = (() => {
   const DOM = {
+    $navbar: $('.js-navbar'),
+    $application: $('.js-application'),
+    $contactbarMain: $('.js-contactbar-main'),
     $btnContuctus: $('.js-btn-contact-us'),
     $modal: $('.js-modal'),
     $modalClose: $('.js-modal-close'),
@@ -12,6 +15,10 @@ const mainPage = (() => {
   };
 
   const setUpListeners = () => {
+    if (DOM.$contactbarMain.length) {
+      $(window).scroll(toggleContactBar);
+    }
+
     DOM.$btnContuctus
       .click(event => {
         event.preventDefault();
@@ -37,6 +44,16 @@ const mainPage = (() => {
     DOM.$reviewsNavItems
       .removeClass('reviews-nav-item-active')
       .eq(reviewID).addClass('reviews-nav-item-active');
+  };
+
+  const toggleContactBar = () => {
+    let scrolltop = $(window).scrollTop();
+    let offset = DOM.$application.offset().top - DOM.$navbar.height();
+    if (scrolltop > offset) {
+      DOM.$contactbarMain.fadeIn();
+    } else {
+      DOM.$contactbarMain.fadeOut();
+    }
   };
 
   init();

@@ -143,9 +143,12 @@ a {
 // CONTACT BAR
 // ================================================================
 .contactbar {
-  display: none;
   height: $h-contactbar;
   background-color: $c-contactbar-bg;
+
+  &-main {
+    display: none;
+  }
 
   &-search-wrap {
     padding-top: 9px;
