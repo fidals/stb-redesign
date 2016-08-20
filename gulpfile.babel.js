@@ -47,6 +47,7 @@ const PATH = {
       pages: [
         'front/js/components/catalog.es6',
         'front/js/components/category.es6',
+        'front/js/components/product.es6',
       ],
 
       common: [

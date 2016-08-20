@@ -1,4 +1,4 @@
-const mainCatalog = (() => {
+(() => {
   const DOM = {
     $category: $('.js-catalog-category-title'),
     categoryUL: '.js-catalog-category-ul',
@@ -22,7 +22,7 @@ const mainCatalog = (() => {
       });
   };
 
-  const toggleCategory = ($category) => {
+  const toggleCategory = $category => {
     $category
       .toggleClass('catalog-category-title-active')
       .next(DOM.categoryUL)
@@ -30,7 +30,7 @@ const mainCatalog = (() => {
       .slideToggle();
   };
 
-  const toggleSubcategory = ($subcategory) => {
+  const toggleSubcategory = $subcategory => {
     $subcategory
       .find('.catalog-subcategory-ico')
       .toggleClass('fa-minus')

@@ -1,4 +1,4 @@
-const mainPage = (() => {
+(() => {
   const DOM = {
     $navbar: $('.js-navbar'),
     $application: $('.js-application'),
@@ -30,14 +30,12 @@ const mainPage = (() => {
         DOM.$modal.fadeOut();
       });
 
-    DOM.$reviewsNavItems
-      .click(function () {
-        let reviewID = $(this).data('slide-to');
-        reviewsSlideTo(reviewID);
-      });
+    DOM.$reviewsNavItems.click(reviewsSlideTo);
   };
 
-  const reviewsSlideTo = (reviewID) => {
+  const reviewsSlideTo = event => {
+    const reviewID = $(event.target).data('slide-to');
+
     DOM.$reviewsContentItems
       .fadeOut()
       .eq(reviewID).fadeIn();
@@ -47,9 +45,10 @@ const mainPage = (() => {
   };
 
   const toggleContactBar = () => {
-    let scrolltop = $(window).scrollTop();
-    let offset = DOM.$application.offset().top - DOM.$navbar.height();
-    if (scrolltop > offset) {
+    const scrollTop = $(window).scrollTop();
+    const offset = DOM.$application.offset().top - DOM.$navbar.height();
+
+    if (scrollTop > offset) {
       DOM.$contactbarMain.fadeIn();
     } else {
       DOM.$contactbarMain.fadeOut();

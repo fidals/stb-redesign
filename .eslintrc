@@ -1,6 +1,14 @@
 {
   "extends": "airbnb-base",
   "globals": {
+    "window": true,
+    "document": true,
     "$": true
+  },
+  "rules": {
+    "no-use-before-define": ["error", {
+      "functions": false,
+      "classes": false
+    }]
   }
 }

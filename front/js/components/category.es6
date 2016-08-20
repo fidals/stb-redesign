@@ -1,4 +1,4 @@
-const category = (() => {
+(() => {
   const DOM = {
     $filterItem: $('.js-category-filter-item'),
     tableColCountInput: '.js-category-table-col-count-input',
