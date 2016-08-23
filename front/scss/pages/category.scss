@@ -258,16 +258,13 @@
       color: $c-table-btn-hover;
     }
 
-    &-btn:hover .category-table-more-btn-arrow-hover {
+    &-btn:hover .category-table-more-btn-arrow-hover,
+    &-btn:active .category-table-more-btn-arrow-active {
       opacity: 1;
     }
 
     &-btn:active {
       color: $c-table-btn-active;
-    }
-
-    &-btn:active .category-table-more-btn-arrow-active {
-      opacity: 1;
     }
   }
 }
