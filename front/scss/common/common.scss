@@ -398,3 +398,38 @@ a {
     cursor: pointer;
   }
 }
+
+// ================================================================
+// POPOVER
+// ================================================================
+.popover {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  margin-bottom: 17px;
+  padding: 28px 10px;
+  border: solid 1px $c-popover-border;
+  font-size: $f-size-base + 2;
+  font-weight: 400;
+  line-height: 1.33;
+  text-align: center;
+  color: $c-popover;
+  border-radius: 4px;
+  width: 300px;
+  margin-left: -150px;
+  background-color: $c-white;
+
+  &-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: -13px;
+    margin-left: -13px;
+    width: 24px;
+    height: 24px;
+    background-color: $c-white;
+    border-bottom: solid 1px $c-popover-border;
+    border-right: solid 1px $c-popover-border;
+    transform: rotate(45deg);
+  }
+}

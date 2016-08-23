@@ -8,6 +8,8 @@
     $modalClose: $('.js-modal-close'),
     $reviewsContentItems: $('.js-reviews-content-item'),
     $reviewsNavItems: $('.js-reviews-nav-item'),
+    $popoverTrigger: $('.js-popover-trigger'),
+    popover: '.js-popover',
   };
 
   const init = () => {
@@ -28,6 +30,13 @@
     DOM.$modalClose
       .click(() => {
         DOM.$modal.fadeOut();
+      });
+
+    DOM.$popoverTrigger
+      .hover(function () {
+        $(this).find(DOM.popover).stop().fadeIn();
+      }, function () {
+        $(this).find(DOM.popover).stop().fadeOut();
       });
 
     DOM.$reviewsNavItems.click(reviewsSlideTo);

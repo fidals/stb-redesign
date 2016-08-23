@@ -154,7 +154,6 @@
     }
 
     &-input {
-      padding-right: 13px;
       width: 60px;
       font-size: $f-size-base;
       font-weight: 400;
@@ -167,7 +166,7 @@
 
     &-caret {
       position: absolute;
-      right: 3px;
+      right: 1px;
       width: 20px;
       height: 10px;
       font-size: $f-size-base - 2;
@@ -175,6 +174,7 @@
       text-align: center;
       color: $c-table-caret;
       cursor: pointer;
+      background-color: $c-white;
       transition: all 0.2s ease;
     }
 
@@ -277,6 +277,17 @@
 // ================================================================
 .category-about {
   padding: 34px 0 124px;
+
+  &-serial {
+    position: relative;
+    padding: 8px;
+    font-size: $f-size-base + 2;
+    font-weight: 300;
+    line-height: 1.33;
+    text-align: center;
+    color: $c-category-about;
+    border: 1px solid $c-category-about-serial-border;
+  }
 
   &-text {
     font-size: $f-size-base + 2;
