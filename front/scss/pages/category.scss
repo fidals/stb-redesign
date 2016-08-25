@@ -46,7 +46,7 @@
     font-weight: 600;
     line-height: 1.23;
     text-align: center;
-    color: $c-category-title;
+    color: $c-category-filter-title;
   }
 
   &-item {
@@ -70,6 +70,15 @@
       font-size: $f-size-base - 1;
       color: $c-category-filter-item-ico;
     }
+  }
+
+  &-clear {
+    padding-top: 19px;
+    font-size: $f-size-base - 4;
+    font-weight: bold;
+    text-align: center;
+    color: $c-category-filter-clear;
+    cursor: pointer;
   }
 }
 
