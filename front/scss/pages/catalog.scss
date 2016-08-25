@@ -38,6 +38,11 @@
       border-radius: 3px;
       background-color: $c-catalog-category-title-bg;
       cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    &-title:hover {
+      background-color: $c-catalog-category-title-hover-bg;
     }
 
     &-title-img {

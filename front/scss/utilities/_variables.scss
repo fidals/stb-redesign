@@ -79,6 +79,7 @@ $c-reviews-bot-line: #e6eaeb;
 // Page Catalog
 $c-catalog-h1: #171237;
 $c-catalog-category-title-bg: #fc7126;
+$c-catalog-category-title-hover-bg: #bd6739;
 $c-catalog-subcategory: #404040;
 $c-catalog-subcategory-hover: #fc7126;
 $c-catalog-subcategory-ico: #fc7126;
@@ -111,6 +112,18 @@ $c-table-btn: #fc7126;
 $c-table-btn-hover: #bd6739;
 $c-table-btn-active: #904f2b;
 $c-table-border-bottom: #ababab;
+
+// Page Series
+$c-series-h1: #171237;
+$c-series-categories-item: #212121;
+$c-series-categories-item-hover: #fc7126;
+$c-series-categories-item-active: #fc7126;
+$c-series-categories-border: #ababab;
+$c-series-list-bg: #dde3e8;
+$c-series-list-border: #ababab;
+$c-series-list-item: #2c2c2c;
+$c-series-list-link: #212121;
+$c-series-about: #212121;
 
 // Page Cart
 $c-cart-header: #171237;
@@ -187,8 +200,8 @@ $h-contactbar: 44px;
 $h-header: $h-nav + $h-contactbar;
 
 // Shadows:
-$c-shadow: rgba(0, 0, 0, 0.25);
-$sh-search: 0 2px 4px 0 $c-shadow;
-$sh-search-focus: 0 2px 8px 2px $c-shadow;
+$c-shadow: rgba($c-black, 0.25);
+$sh-search: 0 1px 5px 0 $c-shadow;
+$sh-search-focus: 0 2px 10px 1px rgba($c-black, 0.2);
 $sh-news-item: 0 2px 4px 0 $c-shadow;
 $sh-modal: 0 2px 8px 0 $c-shadow;
