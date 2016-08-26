@@ -139,6 +139,189 @@ a {
   }
 }
 
+.navbar-chart {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 45px;
+  padding: 12px 16px 16px;
+  width: 324px;
+  background-color: $c-white;
+  border-radius: 2px;
+  box-shadow: $sh-modal;
+
+  &-clear {
+    margin-bottom: 21px;
+    font-size: $f-size-base - 3;
+    font-weight: 600;
+    line-height: 1.23;
+    text-align: right;
+    color: $c-navbar-chart-clear;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $c-navbar-chart-clear-hover;
+    }
+
+    &:active {
+      color: $c-navbar-chart-clear-active;
+    }
+  }
+
+  &-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &-name {
+      margin-bottom: 6px;
+      font-size: $f-size-base - 2;
+      font-weight: 300;
+      line-height: 1.14;
+      letter-spacing: -0.2px;
+      color: $c-navbar-chart-item-name;
+    }
+
+    &-price {
+      margin-right: 4px;
+      font-size: $f-size-base - 4;
+      font-weight: 600;
+      line-height: 1.33;
+      color: $c-navbar-chart-item-price;
+    }
+
+    &-count {
+      font-size: $f-size-base - 2;
+      font-weight: 300;
+      line-height: 1.14;
+      letter-spacing: -0.2px;
+      color: $c-navbar-chart-item-count;
+    }
+
+    &-remove {
+      position: absolute;
+      right: -6px;
+      top: 0;
+      padding: 2px;
+      color: $c-navbar-chart-item-remove;
+      cursor: pointer;
+    }
+  }
+
+  &-order {
+    padding-top: 19px;
+    text-align: right;
+
+    &-btn {
+      padding: 4px 18px 6px;
+      font-size: $f-size-base;
+    }
+  }
+}
+
+.navbar-subnav {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 42px;
+  padding: 16px 12px;
+  width: 360px;
+  background-color: $c-white;
+  border-radius: 2px;
+  box-shadow: $sh-modal;
+
+  &-item {
+    margin-bottom: 4px;
+
+    &-link {
+      font-size: $f-size-base - 2;
+      font-weight: 300;
+      line-height: 1.14;
+      letter-spacing: -0.2px;
+      color: $c-navbar-subnav-link;
+    }
+
+    &-link:hover {
+      color: $c-navbar-subnav-link-hover;
+    }
+  }
+}
+
+// ================================================================
+// SEARCH
+// ================================================================
+.search {
+  position: relative;
+
+  &-field {
+    width: 100%;
+    height: 26px;
+    padding: 2px 48px 3px 12px;
+    font-size: $f-size-base - 2;
+    font-weight: 300;
+    line-height: 1.14;
+    letter-spacing: -0.0125em;
+    color: $c-search-field;
+    background-color: $c-white;
+    border: 0;
+    border-radius: 13px;
+    box-shadow: $sh-search;
+    transition: box-shadow 0.2s ease;
+
+    &:focus {
+      box-shadow: $sh-search-focus;
+    }
+  }
+
+  &-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 18px;
+    color: $c-btn-search;
+    font-size: $f-size-base - 1;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $c-btn-search-hover;
+    }
+  }
+
+  &-propose {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    padding: 12px 10px;
+    width: 360px;
+    text-align: left;
+    background-color: $c-white;
+    border-radius: 2px;
+    box-shadow: $sh-modal;
+
+    &-more {
+      margin-bottom: 9px;
+    }
+
+    &-item {
+      margin-bottom: 9px;
+      line-height: 1.1;
+    }
+
+    &-item-link {
+      font-size: $f-size-base - 2;
+      font-weight: 300;
+      letter-spacing: -0.2px;
+      color: $c-search-propose-link;
+    }
+  }
+}
+
 // ================================================================
 // CONTACT BAR
 // ================================================================
@@ -152,46 +335,6 @@ a {
 
   &-search-wrap {
     padding-top: 9px;
-  }
-
-  &-search {
-    position: relative;
-  }
-
-  &-search-field {
-    width: 100%;
-    height: 26px;
-    padding: 2px 48px 3px 12px;
-    font-size: $f-size-base - 2;
-    font-weight: 300;
-    line-height: 1.14;
-    letter-spacing: -0.0125em;
-    color: $c-contactbar-search-field;
-    background-color: $c-white;
-    border: 0;
-    border-radius: 13px;
-    box-shadow: $sh-search;
-    transition: box-shadow 0.2s ease;
-
-    &:focus {
-      box-shadow: $sh-search-focus;
-    }
-  }
-
-  &-search-btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5px 18px;
-    color: $c-contactbar-btn-search;
-    font-size: $f-size-base - 1;
-    line-height: 1;
-    cursor: pointer;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: $c-contactbar-btn-search-hover;
-    }
   }
 
   &-contacts {

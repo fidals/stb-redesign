@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="../front/build/css/pages.min.css">
 </head>
 <body>
-
   <header class="header">
     <nav class="navbar">
       <div class="container container-fluid">
         <div class="row between-xs">
-          
           <div class="col-xs-3">
             <div class="navbar-brand">
               <a href="#">
@@ -20,14 +18,35 @@
               </a>
             </div>
           </div>
-
           <div class="col-xs-8">
             <ul class="navbar-nav">
               <li class="navbar-nav-item">
                 <a class="navbar-nav-link" href="#">Заказ</a>
               </li>
-              <li class="navbar-nav-item">
+              <li class="navbar-nav-item js-navbar-nav-item">
                 <a class="navbar-nav-link" href="#">Каталог</a>
+                <ul class="navbar-subnav js-navbar-subnav">
+                  <li class="navbar-subnav-item">
+                    <a class="navbar-subnav-item-link" href="#">
+                      Дорожное строительство
+                    </a>
+                  </li>
+                  <li class="navbar-subnav-item">
+                    <a class="navbar-subnav-item-link" href="#">
+                      Общегражданское строительство
+                    </a>
+                  </li>
+                  <li class="navbar-subnav-item">
+                    <a class="navbar-subnav-item-link" href="#">
+                      Строительство энергетических объектов
+                    </a>
+                  </li>
+                  <li class="navbar-subnav-item">
+                    <a class="navbar-subnav-item-link" href="#">
+                      Строительство инженерных сетей
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="navbar-nav-item">
                 <a class="navbar-nav-link" href="#">Серии</a>
@@ -41,26 +60,141 @@
               <li class="navbar-nav-item">
                 <a class="navbar-nav-link" href="#">Контакты</a>
               </li>
-              <li class="navbar-nav-item">
-                <a class="navbar-nav-link navbar-nav-chart" href="#">Корзина</a>
+              <li class="navbar-nav-item js-navbar-nav-chart">
+                <a class="navbar-nav-link navbar-nav-chart" href="#">
+                  Корзина
+                </a>
+                <div class="navbar-chart js-navbar-chart">
+                  <div class="navbar-chart-clear">Очистить корзину</div>
+                  <ul>
+                    <li class="navbar-chart-item">
+                      <div class="navbar-chart-item-name">
+                        Карнизная плита железобетонная ОЛ 42.10.8-Т
+                      </div>
+                      <div class="navbar-chart-item-summ">
+                        <span class="navbar-chart-item-price">12655 руб.</span>
+                        <span class="navbar-chart-item-count">x 20</span>
+                      </div>
+                      <i class="fa fa-close navbar-chart-item-remove" 
+                         aria-hidden="true"></i>
+                    </li>
+                    <li class="navbar-chart-item">
+                      <div class="navbar-chart-item-name">
+                        Стойка железобетонная С-1-5
+                      </div>
+                      <div class="navbar-chart-item-summ">
+                        <span class="navbar-chart-item-price">17600 руб.</span>
+                        <span class="navbar-chart-item-count">x 1</span>
+                      </div>
+                      <i class="fa fa-close navbar-chart-item-remove" 
+                         aria-hidden="true"></i>
+                    </li>
+                  </ul>
+                  <div class="navbar-chart-order">
+                    <a href="#" class="btn navbar-chart-order-btn">Оформить заказ</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </nav>
 
     <div class="contactbar">
       <div class="container container-fluid">
-
         <div class="row">
           <div class="col-xs-offset-1 col-xs-4 contactbar-search-wrap">
-            <div class="contactbar-search">
-              <input type="text" class="contactbar-search-field">
-              <span class="contactbar-search-btn">
+            <div class="search">
+              <input type="text" class="search-field js-search-field">
+              <span class="search-btn">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </span>
+              <div class="search-propose js-search-propose">
+                <div class="search-propose-more">
+                  <a href="#" class="more-link">
+                    Показать все результаты
+                    <i class="fa fa-arrow-right more-link-arrow" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <ul>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Карнизная плита железобетонная ОЛ 42.10.8-Т
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Стойка железобетонная С-1-5
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Железнодорожные платформы
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Искусственные сооружения на специализированных автодорогах
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Подпорные стены
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Обстановка и отдельные элементы дороги
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Железобетонные изделия для укрепительных работ
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Обстановка и отдельные элементы дороги
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Подпорные стены
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Мосты и путепроводы
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Коммуникации
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Тротуарные и ограждающие блоки
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Строительство инженерных сетей
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Карнизная плита 10003
+                    </a>
+                  </li>
+                  <li class="search-propose-item">
+                    <a href="#" class="search-propose-item-link">
+                      Железобетонные изделия для укрепительных работ
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-xs-7">
@@ -81,7 +215,6 @@
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </header>
