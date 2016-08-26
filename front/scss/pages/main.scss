@@ -332,7 +332,7 @@
       transition: all 0.2s ease;
     }
 
-    &.active,
+    &-item.active,
     &-item:hover {
       background-color: $c-reviews-nav-item-active;
     }
